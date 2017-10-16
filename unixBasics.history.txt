@@ -1,0 +1,268 @@
+    1  cd /bin/
+    2  ls
+    3  ls -l
+    4  ls -lt
+    5  man ls
+    6  ls -ls|head
+    7  date ;sleep 2 ; date
+    8  man sleep
+    9  cat blablabla.txt
+   10  cat blablabla.txt 2> errors.tx
+   12  mkdir Ying
+   13  touch
+   14  touch Ying.txt
+   20  man touch
+   21  cat blablabla.txt 2> errors.txt
+   22  cat blablabla.txt > errors.txt
+   23  less errors.txt 
+   24  cat flav_chr_cuffdiff.txt blablabla.file
+   25  cat flav_chr_cuffdiff.txt blablabla.file> out.txt 2>err.txt
+   26  less err.txt
+   27  cat blablabla.txt 2> errors.txt
+   28  less errors.txt 
+   29  cat fav_chr_cuffdiff.txt blablabla.file > all_out_err.txt 2>&1
+   30  ls all_out_err.txt 
+   31  less all_out_err.txt 
+   32  cd
+   33  pwd
+   34  cd ..
+   35  ls
+   36  mkdir problemsets
+   37  ls
+   38  cd admin/
+   39  ls
+   40  cd Ying/
+   41  ls
+   42  pwd
+   43  mkdir problemsets
+   44  pwd
+   45  cd problemsets/
+   46  ls
+   47  pwd
+   48  curl -o https://github.com/srobb1/pfb2017/blob/master/files/sequences.nt.fa
+   49  Curl -o https://github.com/srobb1/pfb2017/blob/master/files/sequences.nt.fa
+   50  curl -o https://github.com/srobb1/pfb2017/blob/master/files/sequences.nt.fa
+   51  curl -O https://github.com/srobb1/pfb2017/blob/master/files/sequences.nt.fa
+   52  ls
+   53  wc -l sequences.nt.fa
+   54  wc sequences.nt.fa 
+   55  man wc
+   56  head sequences.nt.fa 
+   57  tail sequences.nt.fa 
+   58  grep > sequences.nt.fa 
+   59  grep 
+   60  less sequences.nt.fa 
+   61  curl -O https://github.com/srobb1/pfb2017/blob/master/files/sequences.nt.fa
+   62  grep '>' sequences.nt.fa 
+   63  less
+   64  less
+   65  cat sequences.nt.fa 
+   66  curl -O https://github.com/srobb1/pfb2017/blob/master/files/sequences.nt.fa
+   67  less sequences.nt.fa 
+   68  curl -O http://programmingforbiology.org/problem_sets/files/sequences.nt.fa
+   69  less sequences.nt.fa 
+   70  grep '>' sequences.nt.fa 
+   71  mv sequences.nt.fa cancer_genes.fasta
+   72  wget http://programmingforbiology.org/problem_sets/files/cuffdiff.txt
+   73  ls
+   74  less cuffdiff.txt 
+   75  head cuffdiff.txt 
+   76  man sort
+   77  man sort
+   78  ls
+   79  cuffdiff.txt |sort -n -k10 |head -100 > top100.sorted.cuffdiff.out
+   80  cat cuffdiff.txt
+   81  cat cuffdiff.txt |sort -n -k10 |head -100 > top100.sorted.cuffdiff.out
+   82  less top100.sorted.cuffdiff.out 
+   83  head top100.sorted.cuffdiff.out 
+   84  tail top100.sorted.cuffdiff.out 
+   85  man sort
+   86  cat cuffdiff.txt |sort -n -r -k10 > sorted.cuffdiff.o
+   87  cat cuffdiff.txt |sort -n -r -k10 > sorted.cuffdiff.out
+   88  ls
+   89  rm sorted.cuffdiff.o
+   90  head sorted.cuffdiff.out 
+   91  tail sorted.cuffdiff.out 
+   92  ld
+   93  ls
+   94  head -100 sorted.cuffdiff.out >top100.sorted.cuffdiff.out 
+   95  less top100.sorted.cuffdiff.out 
+   96  ls
+   97  sort -k cuffdiff.txt 
+   98  man sort
+   99  sort -k1 cuffdiff.txt 
+  100  sort -k1 cuffdiff.txt > sorted_column1.txt
+  101  head sorted_column1.txt 
+  102  sort --unique sorted_column1.txt > unique_column1.txt
+  103  head unique_column1.txt 
+  104  cat -1 unique_column1.txt 
+  105  ls
+  106  sort -k1 --unique cuffdiff.txt| cut -f1 > unique_column1.txt
+  107  less unique_column1.txt 
+  108  head unique_column1.txt > differentially.expressed.genes.txt
+  109  less differentially.expressed.genes.txt 
+  110  head -100 unique_column1.txt > differentially.expressed.genes.txt
+  111  less differentially.expressed.genes.txt 
+  121  mv problemsets/ PFB2017_problemsets
+  122  echo "# PFB2017_problemsets" >> README.md
+  123  git init
+  124  git add README.md
+  125  git commit -m "first commit"
+  126  git remote add origin https://github.com/sunying12/PFB2017_problemsets.git
+  127  git push -u origin master
+  132  cd PFB2017_problemsets/
+  137  ls -a
+  138  rm .git
+  139  rmdir .git
+  140  rm -rf .git
+  141  ls
+  142  ls -a
+  143  rm README.md 
+  144  ls
+  145  cd PFB2017_problemsets/
+  146  ls
+  147  echo "# PFB2017_problemsets" >> README.md
+  148  git init
+  149  git add README.md
+  150  git commit -m "first commit"
+  151  git remote add origin https://github.com/sunying12/PFB2017_problemsets.git
+  152  git push -u origin master
+  153  echo "# PFB2017_problemsets" >> README.md
+  154  ls
+  155  ls -a
+  156  git init
+  157  git add README.md
+  158  git commit -m "first commit"
+  159  git remote add origin https://github.com/sunying12/PFB2017_problemsets.git
+  160  git push -u origin master
+  161  ls
+  162  cd ..
+  163  ls
+  164  mkdir test
+  165  ls
+  166  cd test/
+  167  ls
+  168  echo "# PFB2017_problemsets" >> README.md
+  169  git init
+  170  git add README.md
+  171  git commit -m "first commit"
+  172  git remote add origin https://github.com/sunying12/PFB2017_problemsets.git
+  173  git push -u origin master
+  174  ls -a
+  175  cd ..
+  176  ls
+  177  cd PFB2017_problemsets/
+  178  ls
+  179  ls
+  180  ls -a
+  181  cd ..
+  182  ls
+  183  ls -a
+  184  cd PFB2017_problemsets/
+  185  ls
+  186  git init
+  187  git add README.md
+  188  git commit -m "first commit"
+  189  git add
+  190  git add *
+  191  git status
+  192  ls
+  193  git commit -m "first commit"
+  194  git push -u origin master
+  195  git pull
+  196  git pull origin master
+  197  ls -la
+  198   git branch --set-upstream-to=origin/
+  199   git branch --set-upstream-to=origin/master master
+  200  pwd
+  201  cd ..
+  202  ls
+  203  mkdir problemsets
+  204  git clone https://github.com/sunying12/PFB2017_problemsets.git
+  205  cd problemsets/
+  206  git clone https://github.com/sunying12/PFB2017_problemsets.git
+  207  ls
+  208  cd PFB2017_problemsets/
+  209  ls
+  210  cd ..
+  211  ls
+  212  cd ..
+  213  ls
+  214  cd PFB2017_problemsets/
+  215  ls
+  216  ls -la
+  217  rm -rf .git
+  218  rm README.md 
+  219  ls -la
+  220  cd ..
+  221  ls
+  222  cd problemsets/
+  223  ls
+  224  cd..
+  225  ls
+  226  cd ..
+  227  ls
+  228  mv problemsets/ repository
+  229  ls
+  230  PFB2017_problemsets/
+  231  ls
+  232  cd repository/
+  233  ls
+  234  pwd
+  235  ls
+  236  cd PFB2017_problemsets/
+  237  ls
+  238  cp /Users/admin/Ying/PFB2017_problemsets/cancer_genes.fasta ./
+  239  ls
+  240  git add cancer_genes.fasta 
+  241  git commit -m 'add to just test'
+  242  git push
+  243  ls
+  244  mkdir files
+  245  cd files/
+  246  ls
+  247  cp /Users/admin/Ying/PFB2017_problemsets/cancer_genes.fasta ./
+  248  ls
+  249  cd ..
+  250  ls
+  251  cd files/
+  252  ls
+  253  ls
+  254  cd ..
+  255  ls
+  256  rm cancer_genes.fasta 
+  257  ls
+  258  git add files/cancer_genes.fasta 
+  259  git commit -m 'adding cancer_genes.fasta to files, removing it from problemsets'
+  260  git push
+  261  git status
+  262  git rm cancer_genes.fasta
+  263  git status
+  264  git commit
+  265  git push
+  266  nano
+  267  nano
+  268  ls
+  269  git add mysequences.txt 
+  270  git commit -m 'new file'
+  271  git push
+  272  mkdir fastas
+  273  ls
+  274  cp ./files/cancer_genes.fasta ./fastas/
+  275  cd fastas/
+  276  ls
+  277  cd ..
+  278  ls
+  279  cd f
+  280  cd files/
+  281  ls
+  282  rm cancer_genes.fasta 
+  283  cd ..
+  284  ls
+  285  git add all *
+  286  git add *
+  287  git commit 'moved files around'
+  288  git commit -m 'moved files around'
+  289  git push
+  290  history
+  291  history > unizBasics.history.txt
