@@ -1,0 +1,31 @@
+
+#!/usr/bin/env Python3
+
+dNA="GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG"
+
+# Figure out how many of them there are
+fecori = dna.count('GAATTC')
+
+# find the start position of a  EcoR1 site GAATTC
+# use locate and report
+start = dna.find('GAATTC')
+# find found it at 395
+first_fragment = dna[0:395]
+second_fragement = dna[395:]
+
+# the python number is 395 so the actual location starts at the 396 position
+
+first_length =len(first_fragment)
+second_length =len(second_fragement)
+
+# Find the location of this site (first and last nucleotides)
+# extract the restriction fragments- print each fragment along with its position in the whole DNA sequence and its length
+# use string formatting to format your print statement
+
+# Fragment\tPosition\tlength
+#GAATTC\t395\t6
+string = " The EcoRI site is {} and can be found at position {} in this DNA. The total length of the first DNA fragment is {}. The total length of the second DNA fragment is {}. "
+newstring = string.format(ecori,start,first_fragment,second_fragment)
+
+#print (newstring)
+
