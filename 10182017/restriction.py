@@ -33,3 +33,19 @@ secondstring = string2.format(second_fragment, second_position, second_length)
 print (firststring)
 print (secondstring)
 
+dna_list = [first_fragment, second_fragment]
+# sort by sorted list
+sorted_list = sorted(dna_list)
+# sort by length
+length_list = sorted(dna_list, key=len)
+
+# This is not correct
+my_list = ['a', 'bb', 'ccc']
+list_copy = my_list
+my_list.append("cat")
+
+
+# This is correct
+my_list = ['a', 'bb', 'ccc']
+list_copy = my_list.copy()
+my_list.append("cat")
