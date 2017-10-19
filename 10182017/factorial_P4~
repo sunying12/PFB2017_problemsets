@@ -1,0 +1,15 @@
+#!/usr/bin/env Python3
+
+num =1
+n =1000
+
+
+
+while n >0:
+      print ("count:" , n)
+      num = num*n
+      n = n-1
+
+  
+print (num)
+print ("Done")
