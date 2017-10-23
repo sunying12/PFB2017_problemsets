@@ -1,0 +1,8 @@
+#!/usr/bin/env Python3
+
+import re
+
+
+fasta = open("Python_06.fasta", "r")
+contents = fasta.read()
+print (contents)

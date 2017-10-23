@@ -1,0 +1,14 @@
+#!/usr/bin/env Python3
+
+sequence = "GGCTAGCATTTAGGCGATAGAGAATTTTNNNNNNNNNNNNNNNNN"
+
+quality = "DDHHIIIIIIIIHIIHHIIIIIIIII"
+
+F = []
+
+for i in sequence:
+    if i.endswith(“N”):
+        i=i[:-1]
+        F.append(i)
+print (i)
+print(F)

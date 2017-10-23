@@ -1,0 +1,15 @@
+#!/usr/bin/env Python3
+
+# open and read content
+
+Dream_file = open("Python_05.txt", "r")
+Dream_contents = Dream_file.read()
+
+
+
+# Upper case each line
+Upper_contents = Dream_contents.upper()
+
+
+# print each line to STDOUT
+print (Upper_contents)

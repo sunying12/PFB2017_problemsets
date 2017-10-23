@@ -1,0 +1,53 @@
+#!/usr/bin/env Python3
+
+# take from user input and calculate nucleotype composition for each sequence
+# use datastructure to kep count
+# Print each sequence name and it's composition in this format
+
+
+import sys
+
+input = sys.argv[1]
+
+#print (input)
+
+file = open(input, "r")
+
+#contents = file.read ()
+
+#print (contents)
+
+#seqName\tA_count\tT_count\tG_count\tC_count
+
+dictionary = {}
+Key = ""
+Value = ""
+
+for line in file: 
+
+# set up dictionary
+    i = line.rstrip()
+    if i.startswith(">"):
+        Key = i
+               
+    else:
+        Value = i
+
+# append to dictionary
+    if Key in dictionary:
+        dictionary[Key] += Value
+    else: 
+        dictionary[Key] = Value
+
+# build a dictionary
+dictionary[Key] = Value
+
+
+#print (len(dictionary.keys())) 
+
+for sequence in dictionary.values(): 
+    # calculate the nucleotide composition for each sequence
+    Apat = sequence.find()
+    #print ("file", sequence)
+#    print (len(re.findall("A", sequence))
+#    print ("file" , Apat)

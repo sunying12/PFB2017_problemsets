@@ -1,0 +1,22 @@
+#!/usr/bin/env Python
+
+import sys
+import re
+
+
+file = open("pfb.fastq", "r")
+
+#contents = file.read()
+
+#print(contents)
+
+
+for line in file: 
+	line = line.strip()
+	if line.startswith("@"):
+
+        #print ("each",line)
+	elif line.startswith(";"):
+	print ("each", line)
+        
+    

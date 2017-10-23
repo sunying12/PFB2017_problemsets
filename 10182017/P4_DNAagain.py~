@@ -1,0 +1,20 @@
+#!/usr/bin/env Python3
+
+list = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
+
+
+for i in list:
+    leng = len(i)
+    string = "{}\t{}\t{}\n"
+    # 1, 4, sequence
+    number = enumerate(i)
+    new_string = string.format(number,leng,i)
+    print (new_string)
+
+
+
+
+
+
+# tuple list
+#fancy_length = [(len(i),i) for i in list]

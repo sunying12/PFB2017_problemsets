@@ -1,0 +1,39 @@
+#!/usr/bin/env Python3
+
+cellp = open("alpaca_stemcellproliferation_genes.tsv", "r")
+pigment = open("alpaca_pigmentation_genes.tsv", "r")
+allgen = open("alpaca_all_genes.tsv","r")
+
+cellpcontents = cellp.read ()
+pigmentcontents = pigment.read()
+allgencontents = allgen.read()
+
+# convert into a list of strings
+cellpsplit = cellpcontents.split()
+pigmentsplit = pigmentcontents.split()
+allgensplit = allgencontents.split()
+
+cellpsplit.remove("Gene")
+cellpsplit.remove("stable")
+cellpsplit.remove("ID")
+
+allgensplit.remove("Gene")
+allgensplit.remove("stable")
+allgensplit.remove("ID")
+
+pigmentsplit.remove("Gene")
+pigmentsplit.remove("stable")
+pigmentsplit.remove("ID")
+
+
+# having sets
+set_cellpsplit = set(cellpsplit)
+set_pigmentsplit = set(pigmentsplit)
+set_allgensplit = set(allgensplit)
+
+
+# not in cell proliferation genes
+not_cellp = set_allgensplit - set_cellpsplit
+
+# both stemcell proliferation genes and pigment genes
+both_stemandpig = set_cellpsplit & set_pigmentsplit

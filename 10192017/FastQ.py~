@@ -1,0 +1,5 @@
+#!/usr/bin/env Python3
+
+FastQ = open ("Python_05.fasta", "r")
+contents = FastQ.read()
+print (contents)
